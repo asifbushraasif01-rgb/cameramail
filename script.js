@@ -30,8 +30,7 @@ startBtn.addEventListener("click", async () => {
     status.textContent = "❌ Camera Error: " + e.message;
   }
 });
-
-captureBtn.addEventListener("click", () => {
+.addEventListener("click", () => {
 
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
@@ -50,7 +49,8 @@ captureBtn.addEventListener("click", () => {
 
 });
 
-sendBtn.addEventListener("click", async () => {
+
+.addEventListener("click", async () => {
 
   if (!capturedImage) {
     alert("Please capture a photo first.");
